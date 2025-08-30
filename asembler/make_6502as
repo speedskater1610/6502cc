@@ -1,0 +1,18 @@
+# Compiler
+CC = gcc
+
+# Output executable
+TARGET = 6502as
+
+# Source files
+SRCS = main.c assembler.c instructions.c symbols.c utils.c
+
+# Build rule
+all: $(TARGET)
+
+$(TARGET): $(SRCS)
+	$(CC) $(SRCS) -o $(TARGET)
+
+# Clean rule
+clean:
+	rm -f $(TARGET)
