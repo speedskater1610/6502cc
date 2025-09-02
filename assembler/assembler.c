@@ -15,12 +15,11 @@ char* assemble_6502(char* assembly_code) {
     unsigned char binary[MAX_OUTPUT/3];
     int output_pos = 0;
 
-    // Reset globals
+    // reset globals
     symbol_count = 0;
     program_counter = 0;
     memset(hex_output, 0, sizeof(hex_output));
     memset(binary, 0, sizeof(binary));
 
-    // ... rest of your two-pass logic here ...
-    // You can keep most of your existing assemble_6502 code.
+    // ... rest of the two-pass logic here ...
 }
